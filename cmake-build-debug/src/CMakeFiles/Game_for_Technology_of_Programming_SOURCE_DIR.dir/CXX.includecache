@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Game.cpp
+Game.h
+/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Game.h
+
+/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/main.cpp
+iostream
+-
+Game.h
+/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Game.h
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Game_for_Technology_of_Programming_SOURCE_DIR.dir/main.cpp.o CMakeFiles/Game_for_Technology_of_Programming_SOURCE_DIR.dir/Game.cpp.o  -o /bin/Game_for_Technology_of_Programming_SOURCE_DIR 

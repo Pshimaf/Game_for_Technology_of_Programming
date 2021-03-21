@@ -1,5 +1,5 @@
-include_directories(${Chess_Game_SOURCE_DIR}/include)
+include_directories(${Game_for_Technology_of_Programming_SOURCE_DIR}/include)
 
-set(EXECUTABLE_OUTPUT_PATH ${Chess_Game_SOURCE_DIR}/bin)
+set(EXECUTABLE_OUTPUT_PATH ${Game_for_Technology_of_Programming_SOURCE_DIR}/bin)
 
-add_executable(Chess_Game main.cpp Game.cpp)
+add_executable(Game_for_Technology_of_Programming main.cpp Game.cpp Board.cpp Cell.cpp Piece.cpp Turn.cpp Different_Types_of_Pieces.cpp)

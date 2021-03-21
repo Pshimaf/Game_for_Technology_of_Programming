@@ -6,10 +6,7 @@
 #define CHESS_GAME_GAME_H
 
 class Game {
-private:
-
 public:
-
     void Run();
 };
 

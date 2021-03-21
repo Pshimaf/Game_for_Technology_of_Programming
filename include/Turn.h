@@ -1,0 +1,12 @@
+//
+// Created by pshimaf on 21.03.2021.
+//
+
+#ifndef GAME_FOR_TECHNOLOGY_OF_PROGRAMMING_TURN_H
+#define GAME_FOR_TECHNOLOGY_OF_PROGRAMMING_TURN_H
+
+class Turn {
+
+};
+
+#endif //GAME_FOR_TECHNOLOGY_OF_PROGRAMMING_TURN_H
