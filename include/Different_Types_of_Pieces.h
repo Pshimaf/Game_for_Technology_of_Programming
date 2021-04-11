@@ -9,12 +9,32 @@
 
 class King: public Piece {
 public:
-    King();
+    King(std::string new_color);
 };
 
-class Pone: public Piece {
+class Pawn: public Piece {
 public:
-    Pone();
+    Pawn(std::string new_color);
+};
+
+class Knight: public Piece {
+public:
+    Knight(std::string new_color);
+};
+
+class Rook: public Piece {
+public:
+    Rook(std::string new_color);
+};
+
+class Bishop: public Piece {
+public:
+    Bishop(std::string new_color);
+};
+
+class EmptyPiece: public Piece {
+public:
+    EmptyPiece();
 };
 
 #endif //GAME_FOR_TECHNOLOGY_OF_PROGRAMMING_DIFFERENT_TYPES_OF_PIECES_H

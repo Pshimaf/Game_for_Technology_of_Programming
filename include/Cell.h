@@ -20,8 +20,8 @@ public:
 
     bool IsEmpty();
     Piece GetPiece();
-    void MoveInPiece(Piece new_piece);
-    void MoveOutPiece();
+    void MoveInPiece(Piece& new_piece);
+    Piece& MoveOutPiece();
 };
 
 #endif //GAME_FOR_TECHNOLOGY_OF_PROGRAMMING_CELL_H

@@ -13,7 +13,6 @@ Board::Board() {
     }
 }
 
-void Board::Move(Piece piece, Cell move_from, Cell move_to) {
-    move_from.MoveOutPiece();
-    move_to.MoveInPiece(piece);
+void Board::Move(Cell& move_from, Cell& move_to) {
+    move_to.MoveInPiece(move_from.MoveOutPiece());
 }

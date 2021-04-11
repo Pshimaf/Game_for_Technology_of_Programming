@@ -12,18 +12,18 @@ public:
     virtual Piece CreateObject() = 0;
 };
 
-class KingCreator: public Creator {
+/*class KingCreator: public Creator {
 public:
     Piece CreateObject() {
         return King();
     }
-};
+};*/
 
-class PoneCreator: public Creator {
+/*class PoneCreator: public Creator {
 public:
     Piece CreateObject() {
         return Pone();
     }
-};
+};*/
 
 #endif //GAME_FOR_TECHNOLOGY_OF_PROGRAMMING_CREATOR_H

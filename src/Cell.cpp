@@ -2,6 +2,7 @@
 // Created by pshimaf on 21.03.2021.
 //
 
+#include "Different_Types_of_Pieces.h"
 #include "Cell.h"
 
 Cell::Cell() {
@@ -10,6 +11,7 @@ Cell::Cell() {
 
 Cell::Cell(int first_coordinate, int second_coordinate) {
     is_empty = true;
+    piece = EmptyPiece();
     cell_coordinates = {first_coordinate, second_coordinate};
 }
 
@@ -21,11 +23,13 @@ Piece Cell::GetPiece() {
     return piece;
 }
 
-void Cell::MoveInPiece(Piece new_piece) {
+void Cell::MoveInPiece(Piece& new_piece) {
     piece = new_piece;
     is_empty = false;
 }
 
-void Cell::MoveOutPiece() {
+Piece& Cell::MoveOutPiece() {
+    piece = EmptyPiece();
     is_empty = true;
+    return piece;
 }

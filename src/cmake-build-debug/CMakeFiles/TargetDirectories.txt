@@ -1,0 +1,3 @@
+/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/Game_for_Technology_of_Programming.dir

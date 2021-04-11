@@ -17,7 +17,7 @@ public:
 
     Board();
 
-    void Move(Piece piece, Cell move_from, Cell move_to);
+    void Move(Cell& move_from, Cell& move_to);
 };
 
 #endif //GAME_FOR_TECHNOLOGY_OF_PROGRAMMING_BOARD_H
