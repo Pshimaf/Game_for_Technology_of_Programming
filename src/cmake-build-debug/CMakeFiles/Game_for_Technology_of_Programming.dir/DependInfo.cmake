@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Board.cpp" "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/Game_for_Technology_of_Programming.dir/Board.o"
   "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Cell.cpp" "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/Game_for_Technology_of_Programming.dir/Cell.o"
+  "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Decorator.cpp" "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/Game_for_Technology_of_Programming.dir/Decorator.o"
   "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Different_Types_of_Pieces.cpp" "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.o"
   "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Game.cpp" "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/Game_for_Technology_of_Programming.dir/Game.o"
   "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Piece.cpp" "/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/cmake-build-debug/CMakeFiles/Game_for_Technology_of_Programming.dir/Piece.o"

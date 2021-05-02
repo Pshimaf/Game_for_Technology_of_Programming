@@ -174,6 +174,21 @@ Cell.s:
 .PHONY : Cell.s
 
 # target to build an object file
+Decorator.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Decorator.o
+.PHONY : Decorator.o
+
+# target to preprocess a source file
+Decorator.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Decorator.i
+.PHONY : Decorator.i
+
+# target to generate assembly for a file
+Decorator.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Decorator.s
+.PHONY : Decorator.s
+
+# target to build an object file
 Different_Types_of_Pieces.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.o
 .PHONY : Different_Types_of_Pieces.o
@@ -263,6 +278,9 @@ help:
 	@echo "... Cell.o"
 	@echo "... Cell.i"
 	@echo "... Cell.s"
+	@echo "... Decorator.o"
+	@echo "... Decorator.i"
+	@echo "... Decorator.s"
 	@echo "... Different_Types_of_Pieces.o"
 	@echo "... Different_Types_of_Pieces.i"
 	@echo "... Different_Types_of_Pieces.s"
