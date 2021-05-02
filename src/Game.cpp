@@ -7,70 +7,8 @@
 #include "Game.h"
 #include "Board.h"
 #include "Creator.h"
-
-enum NumOfPieces {
-    eKing = 0,
-    ePawn = 1,
-    eKnight = 2,
-    eRook = 3,
-    eBishop = 4
-};
-
-enum NumOfColors {
-    Red = 0,
-    Green = 1
-};
-
-class IDrawer {
-public:
-    virtual std::string Out() const = 0;
-};
-
-class Drawer: public IDrawer {
-private:
-    std::string str_;
-
-public:
-    Drawer(std::string new_str) : str_(new_str) {
-    }
-    
-    std::string Out() const {
-        return str_;
-    }
-};
-
-class Decorator: public IDrawer {
-protected:
-    std::shared_ptr<IDrawer> ptr_;
-
-public:
-    Decorator(std::shared_ptr<IDrawer> ptr) : ptr_(ptr) {
-    };
-
-    std::string Out() const override {
-        return this->ptr_->Out();
-    }
-};
-
-class RedDecorator: public Decorator {
-public:
-    RedDecorator(std::shared_ptr<IDrawer> ptr) : Decorator(ptr) {
-    }
-    
-    std::string Out() const override {
-        return "\033[31m" + ptr_->Out() + "\033[0m";
-    }
-};
-
-class GreenDecorator: public Decorator {
-public:
-    GreenDecorator(std::shared_ptr<IDrawer> ptr) : Decorator(ptr) {
-    }
-
-    std::string Out() const override {
-        return "\033[32m" + ptr_->Out() + "\033[0m";
-    }
-};
+#include "Turn.h"
+#include "Decorator.h"
 
 int Sign(int a) {
     if (a > 0) {
@@ -96,12 +34,12 @@ bool IsMoveRight(std::vector<std::pair<int, int>> how_to_move, int x, int y) {
 [[noreturn]] void Game::Run() {
     std::vector<int> red_and_green_money(2);
     std::vector<std::string> red_and_green_color(2);
-    //Board board;
     Board* board = Board::GetInstance();
     std::vector<std::vector<Piece>> vector_of_red_and_green_pieces(2);
     red_and_green_color[0] = "Red";
     red_and_green_color[1] = "Green";
-    vector_of_red_and_green_pieces[Red].push_back(King("Red"));
+    FillInVecOfPieces(vector_of_red_and_green_pieces);
+    /**vector_of_red_and_green_pieces[Red].push_back(King("Red"));
     vector_of_red_and_green_pieces[Green].push_back(King("Green"));
     vector_of_red_and_green_pieces[Red].push_back(Pawn("Red"));
     vector_of_red_and_green_pieces[Green].push_back(Pawn("Green"));
@@ -110,8 +48,9 @@ bool IsMoveRight(std::vector<std::pair<int, int>> how_to_move, int x, int y) {
     vector_of_red_and_green_pieces[Red].push_back(Rook("Red"));
     vector_of_red_and_green_pieces[Green].push_back(Rook("Green"));
     vector_of_red_and_green_pieces[Red].push_back(Bishop("Red"));
-    vector_of_red_and_green_pieces[Green].push_back(Bishop("Green"));
-    board->current_board[1][1].MoveInPiece(vector_of_red_and_green_pieces[Red][eKing]);
+    vector_of_red_and_green_pieces[Green].push_back(Bishop("Green"));*/
+    CreateStartPosition(board, vector_of_red_and_green_pieces);
+    /**board->current_board[1][1].MoveInPiece(vector_of_red_and_green_pieces[Red][eKing]);
     board->current_board[8][8].MoveInPiece(vector_of_red_and_green_pieces[Green][eKing]);
     board->current_board[3][1].MoveInPiece(vector_of_red_and_green_pieces[Red][ePawn]);
     board->current_board[3][2].MoveInPiece(vector_of_red_and_green_pieces[Red][ePawn]);
@@ -122,10 +61,11 @@ bool IsMoveRight(std::vector<std::pair<int, int>> how_to_move, int x, int y) {
     board->current_board[7][6].MoveInPiece(vector_of_red_and_green_pieces[Green][ePawn]);
     board->current_board[6][6].MoveInPiece(vector_of_red_and_green_pieces[Green][ePawn]);
     board->current_board[6][7].MoveInPiece(vector_of_red_and_green_pieces[Green][ePawn]);
-    board->current_board[6][8].MoveInPiece(vector_of_red_and_green_pieces[Green][ePawn]);
+    board->current_board[6][8].MoveInPiece(vector_of_red_and_green_pieces[Green][ePawn]);*/
     int counter = Red;
     while (true) {
-        if (counter == Red) {
+        WhoseMove(counter, red_and_green_money);
+        /**if (counter == Red) {
             std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("RedTurn");
             std::shared_ptr<IDrawer> red_word = std::make_shared<RedDecorator>(word);
             std::cout << red_word->Out() << '\n';
@@ -135,8 +75,9 @@ bool IsMoveRight(std::vector<std::pair<int, int>> how_to_move, int x, int y) {
             std::shared_ptr<IDrawer> green_word = std::make_shared<GreenDecorator>(word);
             std::cout << green_word->Out() << '\n';
             std::cout << "Your money" << ' ' << red_and_green_money[counter] << '\n';
-        }
-        for (int i = 1; i <= 8; ++i) {
+        }*/
+        ShowBoard(board, vector_of_red_and_green_pieces);
+        /**for (int i = 1; i <= 8; ++i) {
             for (int j = 1; j <= 8; ++j) {
                 if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Red][eKing]) {
                     std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("K ");
@@ -203,7 +144,7 @@ bool IsMoveRight(std::vector<std::pair<int, int>> how_to_move, int x, int y) {
                 }
             }
             std::cout << '\n';
-        }
+        }*/
 
         while (true) {
             std::string what_do_you_want;
