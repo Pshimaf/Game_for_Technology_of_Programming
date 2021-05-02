@@ -143,194 +143,110 @@ Game_for_Technology_of_Programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/build
 .PHONY : Game_for_Technology_of_Programming/fast
 
-Board.o: Board.cpp.o
-
+# target to build an object file
+Board.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Board.o
 .PHONY : Board.o
 
-# target to build an object file
-Board.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Board.cpp.o
-.PHONY : Board.cpp.o
-
-Board.i: Board.cpp.i
-
+# target to preprocess a source file
+Board.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Board.i
 .PHONY : Board.i
 
-# target to preprocess a source file
-Board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Board.cpp.i
-.PHONY : Board.cpp.i
-
-Board.s: Board.cpp.s
-
+# target to generate assembly for a file
+Board.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Board.s
 .PHONY : Board.s
 
-# target to generate assembly for a file
-Board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Board.cpp.s
-.PHONY : Board.cpp.s
-
-Cell.o: Cell.cpp.o
-
+# target to build an object file
+Cell.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Cell.o
 .PHONY : Cell.o
 
-# target to build an object file
-Cell.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Cell.cpp.o
-.PHONY : Cell.cpp.o
-
-Cell.i: Cell.cpp.i
-
+# target to preprocess a source file
+Cell.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Cell.i
 .PHONY : Cell.i
 
-# target to preprocess a source file
-Cell.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Cell.cpp.i
-.PHONY : Cell.cpp.i
-
-Cell.s: Cell.cpp.s
-
+# target to generate assembly for a file
+Cell.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Cell.s
 .PHONY : Cell.s
 
-# target to generate assembly for a file
-Cell.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Cell.cpp.s
-.PHONY : Cell.cpp.s
-
-Different_Types_of_Pieces.o: Different_Types_of_Pieces.cpp.o
-
+# target to build an object file
+Different_Types_of_Pieces.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.o
 .PHONY : Different_Types_of_Pieces.o
 
-# target to build an object file
-Different_Types_of_Pieces.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.cpp.o
-.PHONY : Different_Types_of_Pieces.cpp.o
-
-Different_Types_of_Pieces.i: Different_Types_of_Pieces.cpp.i
-
+# target to preprocess a source file
+Different_Types_of_Pieces.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.i
 .PHONY : Different_Types_of_Pieces.i
 
-# target to preprocess a source file
-Different_Types_of_Pieces.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.cpp.i
-.PHONY : Different_Types_of_Pieces.cpp.i
-
-Different_Types_of_Pieces.s: Different_Types_of_Pieces.cpp.s
-
+# target to generate assembly for a file
+Different_Types_of_Pieces.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.s
 .PHONY : Different_Types_of_Pieces.s
 
-# target to generate assembly for a file
-Different_Types_of_Pieces.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Different_Types_of_Pieces.cpp.s
-.PHONY : Different_Types_of_Pieces.cpp.s
-
-Game.o: Game.cpp.o
-
+# target to build an object file
+Game.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Game.o
 .PHONY : Game.o
 
-# target to build an object file
-Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Game.cpp.o
-.PHONY : Game.cpp.o
-
-Game.i: Game.cpp.i
-
+# target to preprocess a source file
+Game.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Game.i
 .PHONY : Game.i
 
-# target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Game.cpp.i
-.PHONY : Game.cpp.i
-
-Game.s: Game.cpp.s
-
+# target to generate assembly for a file
+Game.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Game.s
 .PHONY : Game.s
 
-# target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Game.cpp.s
-.PHONY : Game.cpp.s
-
-Piece.o: Piece.cpp.o
-
+# target to build an object file
+Piece.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Piece.o
 .PHONY : Piece.o
 
-# target to build an object file
-Piece.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Piece.cpp.o
-.PHONY : Piece.cpp.o
-
-Piece.i: Piece.cpp.i
-
+# target to preprocess a source file
+Piece.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Piece.i
 .PHONY : Piece.i
 
-# target to preprocess a source file
-Piece.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Piece.cpp.i
-.PHONY : Piece.cpp.i
-
-Piece.s: Piece.cpp.s
-
+# target to generate assembly for a file
+Piece.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Piece.s
 .PHONY : Piece.s
 
-# target to generate assembly for a file
-Piece.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Piece.cpp.s
-.PHONY : Piece.cpp.s
-
-Turn.o: Turn.cpp.o
-
+# target to build an object file
+Turn.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Turn.o
 .PHONY : Turn.o
 
-# target to build an object file
-Turn.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Turn.cpp.o
-.PHONY : Turn.cpp.o
-
-Turn.i: Turn.cpp.i
-
+# target to preprocess a source file
+Turn.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Turn.i
 .PHONY : Turn.i
 
-# target to preprocess a source file
-Turn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Turn.cpp.i
-.PHONY : Turn.cpp.i
-
-Turn.s: Turn.cpp.s
-
+# target to generate assembly for a file
+Turn.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Turn.s
 .PHONY : Turn.s
 
-# target to generate assembly for a file
-Turn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/Turn.cpp.s
-.PHONY : Turn.cpp.s
-
-main.o: main.cpp.o
-
+# target to build an object file
+main.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/main.o
 .PHONY : main.o
 
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
+# target to preprocess a source file
+main.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/main.i
 .PHONY : main.i
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game_for_Technology_of_Programming.dir/build.make CMakeFiles/Game_for_Technology_of_Programming.dir/main.s
+.PHONY : main.s
 
 # Help Target
 help:

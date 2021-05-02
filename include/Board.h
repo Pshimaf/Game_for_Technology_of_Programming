@@ -10,12 +10,21 @@
 #include "Cell.h"
 
 class Board {
-private:
+protected:
+    Board();
+
+    static Board* board_;
 
 public:
     std::vector<std::vector<Cell>> current_board;
 
-    Board();
+    Board(Board& other) = delete;
+
+    void operator=(const Board&) = delete;
+
+    static Board* GetInstance();
+
+    //Board();
 
     void Move(Cell& move_from, Cell& move_to);
 };
