@@ -9,6 +9,3 @@ include_directories(${CURSES_INCLUDE_DIR})
 
 add_subdirectory(src)
 
-
-
-#target_link_libraries(Game_for_Technology_of_Programming sfml-graphics sfml-window sfml-system)

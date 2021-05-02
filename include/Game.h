@@ -7,7 +7,7 @@
 
 class Game {
 public:
-    [[noreturn]] void Run();
+    void Run();
 };
 
 
