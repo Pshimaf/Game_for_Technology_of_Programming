@@ -7,6 +7,7 @@
 
 King::King(std::string new_color): Piece() {
     name_of_piece = "King";
+    symbol = "K ";
     color = new_color;
     cost = 1000000;
     for (int i = -1; i <= 1; ++i) {
@@ -20,6 +21,7 @@ King::King(std::string new_color): Piece() {
 
 Pawn::Pawn(std::string new_color): Piece() {
     name_of_piece = "Pawn";
+    symbol = "P ";
     color = new_color;
     cost = 30;
     how_to_move.push_back({-1, 0});
@@ -30,6 +32,7 @@ Pawn::Pawn(std::string new_color): Piece() {
 
 Knight::Knight(std::string new_color): Piece() {
     name_of_piece = "Knight";
+    symbol = "Kn";
     color = new_color;
     cost = 50;
     how_to_move.push_back({2, 1});
@@ -44,6 +47,7 @@ Knight::Knight(std::string new_color): Piece() {
 
 Rook::Rook(std::string new_color): Piece() {
     name_of_piece = "Rook";
+    symbol = "R ";
     color = new_color;
     cost = 70;
     for (int i = -3; i <= 3; ++i) {
@@ -57,6 +61,7 @@ Rook::Rook(std::string new_color): Piece() {
 
 Bishop::Bishop(std::string new_color) {
     name_of_piece = "Bishop";
+    symbol = "B ";
     color = new_color;
     cost = 60;
     for (int i = -3; i <= 3; ++i) {

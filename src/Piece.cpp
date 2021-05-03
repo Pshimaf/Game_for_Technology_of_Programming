@@ -26,6 +26,14 @@ std::string Piece::GetColor() {
     return color;
 }
 
+std::string Piece::GetSymbol() {
+    return symbol;
+}
+
+int Piece::GetCost() {
+    return cost;
+}
+
 std::vector<std::pair<int, int>> Piece::GetHowToMove() {
     return how_to_move;
 }

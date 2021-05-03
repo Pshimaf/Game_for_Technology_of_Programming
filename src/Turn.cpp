@@ -50,65 +50,17 @@ void WhoseMove(int counter, std::vector<int> red_and_green_money) {
 void ShowBoard(Board*& board, std::vector<std::vector<Piece>>& vector_of_red_and_green_pieces) {
     for (int i = 1; i <= 8; ++i) {
         for (int j = 1; j <= 8; ++j) {
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Red][eKing]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("K ");
-                std::shared_ptr<IDrawer> red_word = std::make_shared<RedDecorator>(word);
-                std::cout << red_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Green][eKing]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("K ");
-                std::shared_ptr<IDrawer> green_word = std::make_shared<GreenDecorator>(word);
-                std::cout << green_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Red][ePawn]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("P ");
-                std::shared_ptr<IDrawer> red_word = std::make_shared<RedDecorator>(word);
-                std::cout << red_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Green][ePawn]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("P ");
-                std::shared_ptr<IDrawer> green_word = std::make_shared<GreenDecorator>(word);
-                std::cout << green_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Red][eKnight]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("Kn");
-                std::shared_ptr<IDrawer> red_word = std::make_shared<RedDecorator>(word);
-                std::cout << red_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Green][eKnight]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("Kn");
-                std::shared_ptr<IDrawer> green_word = std::make_shared<GreenDecorator>(word);
-                std::cout << green_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Red][eRook]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("R ");
-                std::shared_ptr<IDrawer> red_word = std::make_shared<RedDecorator>(word);
-                std::cout << red_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Green][eRook]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("R ");
-                std::shared_ptr<IDrawer> green_word = std::make_shared<GreenDecorator>(word);
-                std::cout << green_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Red][eBishop]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("B ");
-                std::shared_ptr<IDrawer> red_word = std::make_shared<RedDecorator>(word);
-                std::cout << red_word->Out();
-                continue;
-            }
-            if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Green][eBishop]) {
-                std::shared_ptr<IDrawer> word = std::make_shared<Drawer>("B ");
-                std::shared_ptr<IDrawer> green_word = std::make_shared<GreenDecorator>(word);
-                std::cout << green_word->Out();
-                continue;
+            for (int k = 0; k < vector_of_red_and_green_pieces[Red].size(); ++k) {
+                if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Red][k]) {
+                    std::shared_ptr<IDrawer> word = std::make_shared<Drawer>(vector_of_red_and_green_pieces[Red][k].GetSymbol());
+                    std::shared_ptr<IDrawer> red_word = std::make_shared<RedDecorator>(word);
+                    std::cout << red_word->Out();
+                }
+                if (board->current_board[i][j].GetPiece() == vector_of_red_and_green_pieces[Green][k]) {
+                    std::shared_ptr<IDrawer> word = std::make_shared<Drawer>(vector_of_red_and_green_pieces[Green][k].GetSymbol());
+                    std::shared_ptr<IDrawer> red_word = std::make_shared<GreenDecorator>(word);
+                    std::cout << red_word->Out();
+                }
             }
             if (board->current_board[i][j].IsEmpty()) {
                 std::cout << "# ";
@@ -205,41 +157,9 @@ void Turn(Board*& board, int counter, std::vector<std::vector<Piece>>& vector_of
                 std::cout << "You can't put new piece on old one\n";
                 continue;
             }
-            if (piece_name == "Pawn") {
-                if (red_and_green_money[counter] < 30) {
-                    std::cout << "You don't have enough money\n";
-                    continue;
-                } else {
-                    board->current_board[a][b].MoveInPiece(vector_of_red_and_green_pieces[counter][ePawn]);
-                    red_and_green_money[counter] -= 30;
-                }
-            }
-            if (piece_name == "Knight") {
-                if (red_and_green_money[counter] < 50) {
-                    std::cout << "You don't have enough money\n";
-                    continue;
-                } else {
-                    board->current_board[a][b].MoveInPiece(vector_of_red_and_green_pieces[counter][eKnight]);
-                    red_and_green_money[counter] -= 50;
-                }
-            }
-            if (piece_name == "Rook") {
-                if (red_and_green_money[counter] < 70) {
-                    std::cout << "You don't have enough money\n";
-                    continue;
-                } else {
-                    board->current_board[a][b].MoveInPiece(vector_of_red_and_green_pieces[counter][eRook]);
-                    red_and_green_money[counter] -= 70;
-                }
-            }
-            if (piece_name == "Bishop") {
-                if (red_and_green_money[counter] < 50) {
-                    std::cout << "You don't have enough money\n";
-                    continue;
-                } else {
-                    board->current_board[a][b].MoveInPiece(vector_of_red_and_green_pieces[counter][eBishop]);
-                    red_and_green_money[counter] -= 50;
-                }
+
+            if (board->BuyingNewPiece(piece_name, a, b, counter, vector_of_red_and_green_pieces, red_and_green_money)) {
+                continue;
             }
         }
 
