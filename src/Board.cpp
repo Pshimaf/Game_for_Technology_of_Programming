@@ -24,4 +24,25 @@ Board* Board::GetInstance() {
     return board_;
 }
 
+bool Board::BuyingNewPiece(std::string& piece_name, int a, int b, int counter,
+                    std::vector<std::vector<Piece>>& vector_of_red_and_green_pieces,
+                    std::vector<int>& red_and_green_money) {
+    bool do_not_have_enough_money = false;
+    int piece_number;
+    for (int i = 0; i < vector_of_red_and_green_pieces[counter].size(); ++i) {
+        if (piece_name == vector_of_red_and_green_pieces[counter][i].GetName()) {
+            piece_number = i;
+        }
+    }
+
+    if (red_and_green_money[counter] < vector_of_red_and_green_pieces[counter][piece_number].GetCost()) {
+        std::cout << "You don't have enough money\n";
+        do_not_have_enough_money = true;
+    } else {
+        board_->current_board[a][b].MoveInPiece(vector_of_red_and_green_pieces[counter][piece_number]);
+        red_and_green_money[counter] -= vector_of_red_and_green_pieces[counter][piece_number].GetCost();
+    }
+    return do_not_have_enough_money;
+}
+
 Board* Board::board_= nullptr;;

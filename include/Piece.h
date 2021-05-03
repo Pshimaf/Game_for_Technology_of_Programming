@@ -13,6 +13,7 @@ class Piece {
 protected:
     std::string name_of_piece;
     std::string color;
+    std::string symbol;
     int cost;
 
 public:
@@ -25,6 +26,8 @@ public:
 
     std::string GetName();
     std::string GetColor();
+    std::string GetSymbol();
+    int GetCost();
     std::vector<std::pair<int, int>> GetHowToMove();
 };
 
