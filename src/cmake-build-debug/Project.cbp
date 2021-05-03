@@ -90,6 +90,9 @@
 		<Unit filename="/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Cell.cpp">
 			<Option target="Game_for_Technology_of_Programming"/>
 		</Unit>
+		<Unit filename="/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Decorator.cpp">
+			<Option target="Game_for_Technology_of_Programming"/>
+		</Unit>
 		<Unit filename="/home/pshimaf/Desktop/Game_for_Technology_of_Programming/src/Different_Types_of_Pieces.cpp">
 			<Option target="Game_for_Technology_of_Programming"/>
 		</Unit>

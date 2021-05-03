@@ -16,3 +16,12 @@ Board::Board() {
 void Board::Move(Cell& move_from, Cell& move_to) {
     move_to.MoveInPiece(move_from.MoveOutPiece());
 }
+
+Board* Board::GetInstance() {
+    if(board_ == nullptr){
+        board_ = new Board();
+    }
+    return board_;
+}
+
+Board* Board::board_= nullptr;;

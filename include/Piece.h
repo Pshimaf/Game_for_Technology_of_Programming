@@ -18,7 +18,6 @@ protected:
 public:
     std::vector<std::pair<int, int>> how_to_move;
 
-public:
     Piece() = default;
 
     Piece& operator=(Piece other);
